@@ -1,8 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
+# soup=BeautifulSoup(requests.get('https://medium.com/featurepreneur').content,
+# 'lxml')
+
 soup = BeautifulSoup(
-    requests.get("https://medium.com/featurepreneur").content,
+    requests.get("https://medium.com/featurepreneur/latest").content,
     "html.parser")
     
 # print(soup.prettify)
